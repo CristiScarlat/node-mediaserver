@@ -1,0 +1,27 @@
+{% extends './index.html' %}
+
+{% block body %}
+{% block content %}
+<main class="home-main">
+    <form class="home-login-form" action="/users/signup" method="post">
+        <div class="mb-3">
+            <label for="inputUsername" class="form-label">Username</label>
+            <input type="text" class="form-control" id="inputUsername" name="username">
+        </div>
+        <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" name="email">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword" name="password">
+        </div>
+        <p style="color: red; font-size: 18px;">{{errorMsg}}</p>
+        <input type="submit" class="btn btn-primary"/>
+    </form>
+</main>
+
+{% endblock %}
+
+{% endblock %}

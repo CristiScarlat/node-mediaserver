@@ -1,0 +1,12 @@
+body, main {
+    min-height: 100vh;
+}
+
+.home-main {
+    display: flex;
+}
+
+.home-login-form {
+    margin: auto;
+    max-width: 20rem;
+}
